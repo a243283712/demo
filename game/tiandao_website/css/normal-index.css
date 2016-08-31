@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("reset.css");
+
+body {font-family:Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none; font-family:"Helvetica Neue", Helvetica, Arial,"Microsoft Jhenghei", "微軟正黑體", sans-serif;}
+
+html,body,h1,h2,h3,h4,h5,h6,ul,ol,dd,dt,p,li,input,form,fieldset,legend,img { margin:0; padding:0;}
+ul,ol{ list-style:none;}
+input{ border:0 none; outline-style:none;}  /*清除盒子外边框，外发光*/
+.wrap{ width:1568px; margin:0 auto;} /*版心宽度*/
+.clearfix:after{ content:""; height:0; line-height:0; display:block; visibility:hidden; clear:both; }
+.clearfix{zoom:1;} /*为了兼容低版本IE浏览器*/
+a{ text-decoration:none; color:#666; font-size:12px;font-family:"微软雅黑";}
+i{ font-style:normal;}
+/*html,body{overflow-y:hidden;}*/
+a:hover{color:#000;}
+img{ width:100%; height:auto;}
+
+#mobile-layout{display:none;}
+/* banner */
+.banner{width:100%; background:#E1CAB8; position:relative; margin:0 auto;height: 100%;}
+.logo{ position:absolute; left:24%; top:2%;margin-left:-255px; }
+.btn_box{ position:absolute; left:4.5%; top:29%;background:url(../images/btn_bg.png) no-repeat;padding-top: 13px;padding-left: 18px;width: 27%;}
+.btn01{margin-left: -15px;}
+.btn02 img,.btn03 img{width: 53%;margin-left: -42%;}
+.btn02 img{margin-top: 15%;}
+.search_btn{background:url(../images/search.png)no-repeat;margin-top:17px;width: 397px;height: 71px;margin-left: -6px;position:relative;}
+input{background: none;width: 206px;height: 45px;font-size: 26px; position:absolute; left:42%; top:9%;}
+.search_icon{position:absolute; left:76%; top:18%;}
+
+.search_btn:hover{background:url(../images/search_hover.png)no-repeat;}
+.baiyi{width: 154px;height: 154px;background:url(../images/baiyi.png)no-repeat;}
+.fb{width: 152px;height: 61px;background:url(../images/fb_bg.png)no-repeat;position:absolute;top:0;right:18%;padding-top: 1.6%;}
+.zan img{width: 47%; margin-left: -1%; margin-top: -4%;}
+.share img{width: 23%; margin-left: 3%;}
+
+
+.scroll{width:100%;height:672px;position: relative; overflow: hidden;}
+.slogan{position: absolute; left: 23%;top:86%;width: 59%;}
+.banner ul{width:1000%; position: absolute; left:0; top: 0;}
+.banner ul li{float: left;width:10%;overflow: hidden;} 
+.banner li a{width: 100%; height: 672px;position: relative; display: block;}
+.banner li img{position: absolute; left: 50%; margin-left: -767px;top: 0;width:122%;}
+/*.banner ol li:hover p{height:38px; width:69px;background:url(../images/jiantou_top.png) no-repeat;padding-top: 12%;padding-left: 20px;}
+.banner ol li:hover p.right{background:url(../images/jiantou_down.png) no-repeat;margin-top: 12%;}
+*/
+
+
+/*.banner ol{ position:absolute; left:86%;top:6%;}
+.banner ol li{cursor: pointer;}
+.banner ol li:hover{-webkit-transform: scale(1.1);
+                       -moz-transform: scale(1.1);
+                        -ms-transform: scale(1.1);
+                         -o-transform: scale(1.1);
+                            transform: scale(1.1);} 
+.baiyi{background:url(../images/baiyi.png)no-repeat;width:119px;height: 119px;}
+.shuangdao{background:url(../images/shuangdao.png)no-repeat;width: 119px;height: 119px;margin:10px 0;}
+.fashi{background:url(../images/fashi.png)no-repeat;width: 119px;height: 119px;margin:10px 0;}
+.luneng{background:url(../images/luneng.png)no-repeat;width: 119px;height: 119px;}
+
+.tex_bg{width: 342px;height: 145px;display:inline-block;margin-left: -174%;}
+.shuangdao01{background:url(../images/shuangdao_hover.png)no-repeat; }
+.baiyi01{background:url(../images/baiyi_hover.png)no-repeat; }
+.fashi01{background:url(../images/fashi_hover.png)no-repeat; }
+.luneng01{background:url(../images/luneng_hover.png)no-repeat; }*/
+
+/*.baiyi:hover{background:url(../images/baiyi_hover.png)no-repeat; margin-left: -64%;width: 671px;height: 287px;}
+.shuangdao:hover{background:url(../images/shuangdao_hover.png)no-repeat; margin-left: -64%;width: 671px;height: 287px;}
+.fashi:hover{background:url(../images/fashi_hover.png)no-repeat; margin-left: -64%;width: 671px;height: 287px;}
+.luneng:hover{background:url(../images/luneng_hover.png)no-repeat; margin-left: -64%;width: 671px;height: 287px;}
+*/
+
+@media screen and (min-width: 1400px) {
+    .logo{left:16%;}
+    .slogan{left:10%;}
+    .fb{padding-top: 1.2%;}
+}
+
+
+
+.banner ol{ position:absolute; left:70%;top:13%;}
+.banner ol li{position: relative;width: 342px;height: 145px;}
+.banner ol li:nth-child(1).active{background:url(../images/shuangdao_hover.png) no-repeat;}
+.banner ol li:nth-child(2).active{background:url(../images/fashi_hover.png) no-repeat;}
+.banner ol li span{position: absolute;top:10px;right:10px;width: 119px;height: 119px;background: url(../images/luneng.png) no-repeat; display: block;}
+
+
+
+
+
