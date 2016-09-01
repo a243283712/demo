@@ -15,23 +15,24 @@
 <meta property="og:image" content="images/fb-share.jpg"/>
 <meta property="og:description" content="《亂拳超人">
 <meta property="og:url" content="">
-<script type="text/javascript" src="js/index.js"></script>  
+
 
 </head>
 
-<body  style="text-align:center">
+<body>
  
  <!-- 手机端start  -->
-<div id="mobile-layout">
+ <div id="mobile-layout">
+    <img src="images/bg.jpg" alt="" />
     <div class="m_header">
-        <img src="images/bg.jpg" />
         <a href="#"><img class="fb" src="images/zan.png" alt="" /></a> 
         <a href="#"><img class="mb_logo" src="images/mb_logo.png" alt="" /></a> 
         <ul class="m_menu">
             <li><a href="#" target="_blank"><img class="btn" src="images/m_btn_00_off.png" /></a></li>
             <li><a href="#" target="_blank"><img class="btn" src="images/m_btn_0_off.png" /></a></li>
             <li><a href="#" target="_blank"><img class="btn" src="images/m_btn_01_off.png" /></a></li>
-            <li><a href="#" target="_blank"><img class="btn" src="images/m_btn_02_off.png" /></a></li>            
+            <li><a href="#" target="_blank"><img class="btn" src="images/m_btn_02_off.png" /></a></li> 
+        </ul>           
     </div>         
 </div>
 <!-- 手机端 end -->
@@ -39,79 +40,54 @@
 <!-- 电脑端start -->
 <div id="normal-layout">
         <!-- banner -->
-      <div class="banner wrap">
+      <div class="banner">
           <div class="scroll">
               <ul>
-                  <li><a><img src="images/banner02.jpg"  alt=""/></a></li>
-                  <li><a><img src="images/banner04.jpg"  alt=""/></a></li>
-                  <li><a><img src="images/banner.jpg"    alt=""/></a></li>
+                  <li><a><img src="images/banner02.jpg" alt=""/></a></li>
+                  <li><a><img src="images/banner04.jpg" alt=""/></a></li>
+                  <li class="mar"><a><img src="images/banner.jpg" alt=""/></a></li>
                   <li><a><img src="images/banner03.jpg"  alt=""/></a></li>
               </ul> 
-          </div> 
-            <div class="fb">
-               <a href="#" class="zan"><img src="images/zan.png"/></a>
-                <a href="#" class="share"><img src="images/share.png"/></a>
           </div>
-         <!--logo start-->
-              <div class="logo">
-                  <a href="#"><img src="images/logo.png"/></a>
-              </div>
-              <div class="btn_box">
-                <a href="#" class="btn01"><img src="images/jingcai_btn.png"/></a>
-                <div><a href="#" class="btn02"><img class="btn" src="images/p_btn_01_off.png"/></a></div>
-                <div><a href="#" class="btn03"><img class="btn" src="images/p_btn_02_off.png"/></a></div>
-                <div class="search_btn">
-                  <input type="text" placeholder="亂拳超人" />
-                  <a href="#" class="search_icon"><img src="images/search_icon.png"/></a>
-                </div>
-              </div>  
-              <ol>
-                  <li class="active"><span></span></li>
-                  <li><span></span></li>
-                  <li><span></span></li>
-              </ol>
- 
-              <div class="slogan wrap"><img src="images/slogan.png" height="138" width="1140"/></div>
       </div>
+          <div class="content">
+              <div class="fb">
+                  <a href="#" class="zan"></a>
+                  <a href="#" class="share"><img src="images/share.png"/></a>
+              </div>
+              <div class="content-left">
+                  <h1 class="logo">
+                    <a href="#" title="乱拳超人">乱拳超人</a>
+                  </h1>
+                  <div class="btn_box">
+                      <a href="#" class="btn01"><img class="btn" src="images/p_btn_0_off.png"/></a>
+                      <span class="btn_span">
+                        <a href="#" class="btn02"><img class="btn" src="images/p_btn_01_off.png"/></a>
+                        <a href="#" class="btn03"><img class="btn" src="images/p_btn_02_off.png"/></a>
+                      </span>
+                      <span class="search_btn">
+                        <input type="text" placeholder="亂拳超人" />
+                        <img class="btn" src="images/m_search_off.png" alt="" />
+                        <a href="#" class="search_icon"><img src="images/search_icon.png"/></a>
+                      </span>
+                  </div>
+              </div>
+              <ol class="content-right">
+                  <li><span class="shuangdao"></span></li>
+                  <li><span class="baiyi"></span></li>
+                  <li><span class="fashi"></span></li>
+                  <li><span class="luneng"></span></li>
+              </ol>
+              <div class="slogan"><img src="images/slogan.png" /></div> 
+          </div>          
+      
 </div>
 <!--電腦端 end-->
      
-</div>
 
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/slider.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 
-<!-- 手机端按钮hover -->
-<script type="text/javascript">
-  $(function() {  
-      // $(".btn").on('mouseenter mouseleave', function( e ){    
-      //   var mE = e.type=='mouseenter';
-      //   var c = ['_off','_on'];
-      //   this.src = this.src.replace( mE?c[0]:c[1] , mE?c[1]:c[0] ); 
-      // });
-
-
-      $('.btn').on("mouseenter mouseleave",function(e){
-          var eE = e.type == 'mouseenter';
-          var c = ['_off','_on'];
-          this.src = this.src.replace(eE?c[0]:c[1],eE?c[1]:c[0]);
-      })
-
-
-       $('.banner ol li').click(function(event) {
-            var $this = $(this)
-          if($this.is('active') == false){
-            $this.addClass('active').siblings().removeClass('active');
-          }
-        
-            
-           
-        });
-});
-
-
-</script>
 
 </body>
 </html>

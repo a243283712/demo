@@ -1,5 +1,5 @@
 /* CSS Document */
 
-@import url(normal-index.css) screen and (min-width: 971px);
+@import url(normal-index.css) screen and (min-width: 768px);
 
-@import url(mobile-index.css) screen and (max-width: 970px);
+@import url(mobile-index.css) screen and (max-width: 767px);
